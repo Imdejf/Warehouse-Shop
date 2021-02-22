@@ -1,5 +1,7 @@
 .vs/
 src/WarehauseShop.WebUI/obj/
-src/WarehauseShop.Application/obj/
 src/WarehauseShop.WebUI/bin/
+src/WarehauseShop.Application/obj/
 src/WarehauseShop.Application/bin/
+src/WarehauseShop.EntityFramework/bin/
+src/WarehauseShop.EntityFramework/obj/

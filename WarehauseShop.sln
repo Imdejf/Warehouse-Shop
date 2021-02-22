@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehauseShop.WebUI", "src\WarehauseShop.WebUI\WarehauseShop.WebUI.csproj", "{ECAE4466-C819-4C74-B7D7-33E2119405D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehauseShop.WebUI", "src\WarehauseShop.WebUI\WarehauseShop.WebUI.csproj", "{ECAE4466-C819-4C74-B7D7-33E2119405D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehauseShop.Application", "src\WarehauseShop.Application\WarehauseShop.Application.csproj", "{C5894D4E-4DBC-4939-8203-DE82FD1E9AD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehauseShop.Application", "src\WarehauseShop.Application\WarehauseShop.Application.csproj", "{C5894D4E-4DBC-4939-8203-DE82FD1E9AD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehauseShop.EntityFramework", "src\WarehauseShop.EntityFramework\WarehauseShop.EntityFramework.csproj", "{22D48C3A-E826-4A6E-8D40-29C359768865}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C5894D4E-4DBC-4939-8203-DE82FD1E9AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5894D4E-4DBC-4939-8203-DE82FD1E9AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5894D4E-4DBC-4939-8203-DE82FD1E9AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22D48C3A-E826-4A6E-8D40-29C359768865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22D48C3A-E826-4A6E-8D40-29C359768865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22D48C3A-E826-4A6E-8D40-29C359768865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22D48C3A-E826-4A6E-8D40-29C359768865}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
