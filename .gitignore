@@ -5,3 +5,5 @@ src/WarehauseShop.Application/obj/
 src/WarehauseShop.Application/bin/
 src/WarehauseShop.EntityFramework/bin/
 src/WarehauseShop.EntityFramework/obj/
+src/WarehauseShop.Domain/bin/
+src/WarehauseShop.Domain/obj/
