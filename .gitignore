@@ -7,3 +7,5 @@ src/WarehauseShop.EntityFramework/bin/
 src/WarehauseShop.EntityFramework/obj/
 src/WarehauseShop.Domain/bin/
 src/WarehauseShop.Domain/obj/
+src/WarehauseShop.CrossCutting.loC/bin/
+src/WarehauseShop.CrossCutting.loC/obj/
