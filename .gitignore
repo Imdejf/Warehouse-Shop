@@ -9,3 +9,5 @@ src/WarehauseShop.Domain/bin/
 src/WarehauseShop.Domain/obj/
 src/WarehauseShop.CrossCutting.loC/bin/
 src/WarehauseShop.CrossCutting.loC/obj/
+src/WarehauseShop.CrossCutting.Identity/bin/
+src/WarehauseShop.CrossCutting.Identity/obj/

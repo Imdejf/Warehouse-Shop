@@ -25,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCuttin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehauseShop.CrossCutting.loC", "src\WarehauseShop.CrossCutting.loC\WarehauseShop.CrossCutting.loC.csproj", "{CA9FC971-4364-4A37-B8C8-5584BFBCF108}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehauseShop.CrossCutting.Identity", "src\WarehauseShop.CrossCutting.Identity\WarehauseShop.CrossCutting.Identity.csproj", "{CA5B4685-9F97-41D7-9B77-B3366E6AE9BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{CA9FC971-4364-4A37-B8C8-5584BFBCF108}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA9FC971-4364-4A37-B8C8-5584BFBCF108}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA9FC971-4364-4A37-B8C8-5584BFBCF108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA5B4685-9F97-41D7-9B77-B3366E6AE9BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA5B4685-9F97-41D7-9B77-B3366E6AE9BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA5B4685-9F97-41D7-9B77-B3366E6AE9BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA5B4685-9F97-41D7-9B77-B3366E6AE9BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{35F8DC75-1FCD-4445-931C-E6E17F6FE170} = {D78CBAF7-1FCE-4467-AE84-0C79AC9A88A0}
 		{5D7A5473-506F-471A-99AA-53EFA05E872F} = {D78CBAF7-1FCE-4467-AE84-0C79AC9A88A0}
 		{CA9FC971-4364-4A37-B8C8-5584BFBCF108} = {5D7A5473-506F-471A-99AA-53EFA05E872F}
+		{CA5B4685-9F97-41D7-9B77-B3366E6AE9BD} = {5D7A5473-506F-471A-99AA-53EFA05E872F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4430EAC6-297E-4B7A-B77F-C22BD16DA7FC}
