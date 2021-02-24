@@ -1,11 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace WarehauseShop.EntityFramework
 {
-    public class WarehauseDbContext : DbContext
+    public class WarehauseDbContext : IdentityDbContext
     {
         public WarehauseDbContext(DbContextOptions options) : base(options)
         {
