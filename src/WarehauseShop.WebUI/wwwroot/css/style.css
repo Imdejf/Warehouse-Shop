@@ -343,6 +343,9 @@ ol {
 .header-top .ht-left {
 	float: left;
 }
+.header-section {
+	background: #ededed;
+}
 
 .header-top .ht-left .mail-service {
 	font-size: 16px;
@@ -3903,7 +3906,7 @@ ol {
 
 @media only screen and (min-width: 1200px) {
 	.container {
-		max-width: 1170px;
+		max-width: 1770px;
 	}
 }
 

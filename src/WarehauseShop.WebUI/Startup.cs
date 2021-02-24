@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WarehauseShop.WebUI.Configurations;
 
 namespace WarehauseShop.WebUI
 {
@@ -25,6 +26,8 @@ namespace WarehauseShop.WebUI
         {
             services.AddControllersWithViews();
             services.AddMvc().AddRazorRuntimeCompilation();
+
+            services.AddDependencyInjectionConfiguration();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
