@@ -27,6 +27,8 @@ namespace WarehauseShop.WebUI
             services.AddControllersWithViews();
             services.AddMvc().AddRazorRuntimeCompilation();
 
+            services.AddDatabaseConfiguration(Configuration);
+
             services.AddDependencyInjectionConfiguration();
         }
 
