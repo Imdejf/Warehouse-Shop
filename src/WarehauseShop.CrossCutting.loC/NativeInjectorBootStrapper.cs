@@ -2,6 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using WarehauseShop.Application.Common.Interfaces;
+using WarehauseShop.EntityFramework;
+using WarehauseShop.EntityFramework.Services;
 
 namespace WarehauseShop.CrossCutting.loC
 {
@@ -12,10 +15,10 @@ namespace WarehauseShop.CrossCutting.loC
             #region Domain
             #endregion
 
-            #region Domain Commands
-            #endregion
 
             #region Application
+            services.AddScoped<IAuthenticationService, AuthenticationService>();
+            services.AddScoped<IAuthorizationService, AuthorizationService>();
             #endregion
 
             #region Data - EntityFramework

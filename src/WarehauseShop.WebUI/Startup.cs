@@ -1,8 +1,11 @@
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.Reflection;
 using WarehauseShop.CrossCutting.Identity;
 using WarehauseShop.WebUI.Configurations;
 
@@ -25,12 +28,19 @@ namespace WarehauseShop.WebUI
 
             // Setting DbContext
             services.AddDatabaseConfiguration(Configuration);
-           
+
+            //Setting DbContextFacotry
+            services.AddDatabaseFactoryConfiguration(Configuration);
+
             // .NET Native DI Abstraction
             services.AddDependencyInjectionConfiguration();
 
             // Setting Identity
             services.AddWarehauseIdentityConfiguration();
+            // Adding MediatR
+            var assembly = AppDomain.CurrentDomain.Load("WarehauseShop.Application");
+            services.AddMediatR(assembly);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -17,12 +17,5 @@ namespace WarehauseShop.WebUI.Controllers
         {
             return View();
         }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-
     }
 }
