@@ -56,8 +56,10 @@
                             <input type="text" asp-for="ConfirmPassword">
                         </div>
                         <div class="py-2">
-                            <input type="radio" name="rdUserRole" value="@SD.AdminRole" />
-                            <input type="radio" name="rdUserRole" value="@SD.CustomerRole" />
+                            <input type="radio" name="rdUserRole" value="@SD.AdminRole" /> @SD.AdminRole
+                            <input type="radio" name="rdUserRole" value="@SD.CustomerRole" /> @SD.CustomerRole
+                            <input type="radio" name="rdUserRole" value="@SD.Salesman" /> @SD.Salesman
+                            <input type="radio" name="rdUserRole" value="@SD.Manager" /> @SD.Manager
                         </div>
                         <div class="group-input gi-check">
                             <div class="gi-more">

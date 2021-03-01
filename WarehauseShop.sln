@@ -23,9 +23,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{35F8DC75-1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{5D7A5473-506F-471A-99AA-53EFA05E872F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehauseShop.CrossCutting.loC", "src\WarehauseShop.CrossCutting.loC\WarehauseShop.CrossCutting.loC.csproj", "{CA9FC971-4364-4A37-B8C8-5584BFBCF108}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehauseShop.CrossCutting.loC", "src\WarehauseShop.CrossCutting.loC\WarehauseShop.CrossCutting.loC.csproj", "{CA9FC971-4364-4A37-B8C8-5584BFBCF108}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehauseShop.CrossCutting.Identity", "src\WarehauseShop.CrossCutting.Identity\WarehauseShop.CrossCutting.Identity.csproj", "{CA5B4685-9F97-41D7-9B77-B3366E6AE9BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WarehauseShop.CrossCutting.Identity", "src\WarehauseShop.CrossCutting.Identity\WarehauseShop.CrossCutting.Identity.csproj", "{CA5B4685-9F97-41D7-9B77-B3366E6AE9BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

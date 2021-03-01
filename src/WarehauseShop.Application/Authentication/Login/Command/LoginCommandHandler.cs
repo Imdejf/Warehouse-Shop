@@ -22,7 +22,8 @@ namespace WarehauseShop.Application.Authentication.Login.Command
         public async Task<SignInResult> Handle(LoginCommand request, CancellationToken cancellationToken)
         {
             ApplicationUser user = await _authentication.GetByUsername(request.Username);
-            SignInResult result = new SignInResult();
+            SignInResult signIn = new SignInResult();
+            var result = signIn;
             if (user != null)
             {
                 result = await _signInManager.PasswordSignInAsync(user.UserName, request.Password, false, lockoutOnFailure: false);
@@ -40,8 +41,9 @@ namespace WarehauseShop.Application.Authentication.Login.Command
                 user = await _authentication.GetByEmail(request.Username);
                 if(user != null)
                 {
-                    result = await _signInManager.PasswordSignInAsync(user.Email, request.Password, false, lockoutOnFailure: false);
-                    if(result.Succeeded)
+                    request.Username = user.UserName;
+                     result = await _signInManager.PasswordSignInAsync(request.Username, request.Password,false, lockoutOnFailure: false);
+                    if (result.Succeeded)
                     {
                         
                     }

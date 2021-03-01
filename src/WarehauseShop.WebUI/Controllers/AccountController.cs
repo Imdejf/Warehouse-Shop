@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,11 @@ namespace WarehauseShop.WebUI.Controllers
     public class AccountController : Controller
     {
         private readonly IMediator _mediator;
-        public AccountController(IMediator mediator)
+        private readonly ILogger<AccountController> _logger;
+        public AccountController(IMediator mediator, ILogger<AccountController> logger)
         {
             _mediator = mediator;
+            _logger = logger;
         }
 
         [HttpGet]
@@ -25,15 +28,22 @@ namespace WarehauseShop.WebUI.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginCommand loginCommand)
         {
-            await _mediator.Send(loginCommand);
-            return View();
+            var result = await _mediator.Send(loginCommand);
+            if (result.Succeeded)
+            {
+                _logger.LogInformation("Pomyślnie zalogowano");
+                return Redirect("~/");
+            }
+            else
+            {
+                return View();
+            }
         }
         [HttpGet]
         public IActionResult Register()
         {
             return View();
         }
-        [HttpPost]
         public async Task<IActionResult> Register(RegisterCommand registerCommand)
         {
             string role = Request.Form["rdUserRole"].ToString();
@@ -41,7 +51,7 @@ namespace WarehauseShop.WebUI.Controllers
            bool result = await _mediator.Send(registerCommand);
             if(result == true)
             {
-                return Redirect("Login");
+                return Redirect("");
             }
 
             return View();

@@ -8,5 +8,7 @@ namespace WarehauseShop.Domain
     {
         public const string AdminRole = "Admin";
         public const string CustomerRole = "Customer";
+        public const string Salesman = "Salesman";
+        public const string Manager = "Manager";
     }
 }

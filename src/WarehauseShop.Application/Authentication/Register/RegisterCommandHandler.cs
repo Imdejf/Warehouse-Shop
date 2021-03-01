@@ -43,6 +43,8 @@ namespace WarehauseShop.Application.Authentication.Register
                     {
                         _roleManager.CreateAsync(new IdentityRole(SD.AdminRole)).GetAwaiter().GetResult();
                         _roleManager.CreateAsync(new IdentityRole(SD.CustomerRole)).GetAwaiter().GetResult();
+                        _roleManager.CreateAsync(new IdentityRole(SD.Salesman)).GetAwaiter().GetResult();
+                        _roleManager.CreateAsync(new IdentityRole(SD.Manager)).GetAwaiter().GetResult();
                         if(request.Role == SD.AdminRole)
                         {
                             await _userManager.AddToRoleAsync(createUser, SD.AdminRole);
