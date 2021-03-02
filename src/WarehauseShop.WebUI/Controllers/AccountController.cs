@@ -20,6 +20,11 @@ namespace WarehauseShop.WebUI.Controllers
             _logger = logger;
         }
 
+        public JsonResult GetSomeValue()
+        {
+            return Json(new { SomeValue = "Logowanie pomyślne" });
+        }
+
         [HttpGet]
         public IActionResult Login()
         {
@@ -32,6 +37,7 @@ namespace WarehauseShop.WebUI.Controllers
             if (result.Succeeded)
             {
                 _logger.LogInformation("Pomyślnie zalogowano");
+                GetSomeValue();
                 return Redirect("~/");
             }
             else
