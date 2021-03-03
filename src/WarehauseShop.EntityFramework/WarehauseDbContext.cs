@@ -11,5 +11,6 @@ namespace WarehauseShop.EntityFramework
         {
         }
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
+        public DbSet<Category> Category { get; set; }
     }
 }
