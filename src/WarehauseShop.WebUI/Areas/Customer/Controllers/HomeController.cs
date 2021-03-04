@@ -2,8 +2,9 @@
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 
-namespace WarehauseShop.WebUI.Controllers
+namespace WarehauseShop.WebUI.Areas.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

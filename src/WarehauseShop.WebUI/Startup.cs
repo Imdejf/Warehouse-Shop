@@ -1,6 +1,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -64,12 +65,15 @@ namespace WarehauseShop.WebUI
             app.UseAuthentication();
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
+
+
+                app.UseEndpoints(endpoints =>
+               {
+                   endpoints.MapControllerRoute(
+                       name: "default",
+                       pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
+
+               });   
         }
     }
 }

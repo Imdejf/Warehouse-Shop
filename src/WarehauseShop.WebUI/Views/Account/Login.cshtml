@@ -56,18 +56,5 @@
 <!-- Register Form Section End -->
 @section Scripts
 {
-    <script type="text/javascript">
-        $.ajax({
-            type: "LOGIN",
-            url: url,
-            success: function (data) {
-                if (data.success) {
-                    toastr.success(data.message);
-                }
-                else {
-                    toastr.error(data.message);
-                }
-            }
-        });
-    </script>
-}
+
+    }
