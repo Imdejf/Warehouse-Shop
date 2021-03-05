@@ -1,15 +1,13 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using WarehauseShop.Application.Authentication.Login.Command;
 using WarehauseShop.Application.Authentication.Register;
 
-namespace WarehauseShop.WebUI.Controllers
+namespace WarehauseShop.WebUI.Areas.Customer.Controllers
 {
+    [Area("Customer")]
     public class AccountController : Controller
     {
         private readonly IMediator _mediator;

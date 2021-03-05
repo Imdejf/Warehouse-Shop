@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 
-namespace WarehauseShop.WebUI.Areas.Controllers
+namespace WarehauseShop.WebUI.Areas.Customer.Controllers
 {
     [Area("Customer")]
     public class HomeController : Controller
