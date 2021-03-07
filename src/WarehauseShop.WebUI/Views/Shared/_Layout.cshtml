@@ -54,6 +54,7 @@
                         if (User.IsInRole(SD.AdminRole))
                         {
                             <a class="login-panel" asp-controller="Account" asp-action="Register"><i class="fa fa-user"></i>Zarejestruj</a>
+                            <a class="login-panel" asp-area="Admin" asp-controller="Home" asp-action="Index">Admin</a>
                         }
                     }
                     else

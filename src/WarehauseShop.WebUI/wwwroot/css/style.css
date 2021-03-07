@@ -653,7 +653,7 @@ ol {
 }
 
 .nav-item {
-	background: #252525;
+	background: transparent;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -781,19 +781,19 @@ ol {
 	top: 52px;
 }
 
-.nav-item .nav-menu li .dropdown {
-	position: absolute;
-	right: 0;
-	top: 82px;
-	width: 200px;
-	z-index: 99;
-	background: #252525;
-	opacity: 0;
-	visibility: hidden;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
+	.nav-item .nav-menu li .dropdown {
+		position: absolute;
+		right: 0;
+		top: 82px;
+		width: 200px;
+		z-index: 99;
+		background: #252525;
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+	}
 
 .nav-item .nav-menu li .dropdown li {
 	display: block;
