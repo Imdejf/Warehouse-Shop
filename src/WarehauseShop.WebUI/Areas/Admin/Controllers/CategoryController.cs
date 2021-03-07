@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WarehauseShop.Domain.Entites;
 
 namespace WarehauseShop.WebUI.Areas.Admin.Controllers
 {
@@ -21,6 +22,16 @@ namespace WarehauseShop.WebUI.Areas.Admin.Controllers
             {
                 return Redirect("~/");
             }
+        }
+        public async Task<IActionResult> Upsert(int? id)
+        {
+            Category category = new Category();
+            return View(category);
+        }
+        [HttpGet]
+        public IActionResult OnGet(int? id)
+        {
+            return View();
         }
     }
 }
